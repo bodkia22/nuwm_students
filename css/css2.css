@@ -1,0 +1,76 @@
+body{
+    margin:0;
+    padding:0;
+    background-color: rgb(0, 71, 107);
+}
+a{
+    text-decoration: none;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.side{
+    width:700px;
+    font-size: 25px;
+    padding: 10px;
+}
+.menu a{
+    background: #3d3d3d;
+    color: orange;
+    padding: 10px;
+    display: block;
+    border-bottom: 1px solid #666;
+    transition: 0.3s all;
+    opacity: 0.9;
+}
+
+.menu a:hover{
+    background-color: #666;
+    padding: 10px 0 10px 13px;
+}
+
+.menu li:first-child a,
+.menu li .menu-drop li:first-child a{
+    border-radius: 6px 6px 0 0;
+}
+
+.menu li:last-child a,
+.menu li .menu-drop li:last-child a{
+    border-radius: 0 0 6px 6px;
+    border-bottom: 0;
+}
+
+
+.menu li .menu-drop li a{
+    border-radius: 0px;
+}
+
+.menu-list{
+    position:relative;
+}
+.menu-drop{
+    position: absolute;
+    width:100%;
+    left:100%;
+    top:-9999em;
+    opacity: 0;
+    transition: 0.3s opacity;
+    border-left: 1px solid transparent;
+}
+
+.menu-list:hover .menu-drop{
+    opacity:1;
+    top:0;
+}
+#table_div{
+    background-color:rgb(4, 71, 107);
+}
+#table_div table{
+  border: 1px solid black;
+}
+
+#table_div td{
+    font-size: 20px;
+}
